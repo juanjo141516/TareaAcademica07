@@ -30,7 +30,7 @@ class ProductoController extends Controller
         $producto-> precio = $json['precio'];
         $producto-> ruc = $json['ruc'];
         $producto-> proveedor = $json['proveedor'];
-        $producto-> categorias = $json['categoria'];
+        $producto-> categorias = $json['categorias'];
 
         $producto->save();
 
@@ -52,7 +52,7 @@ class ProductoController extends Controller
         $producto-> precio = $json['precio'];
         $producto-> ruc = $json['ruc'];
         $producto-> proveedor = $json['proveedor'];
-        $producto-> categorias = $json['categoria'];
+        $producto-> categorias = $json['categorias'];
 
         $producto->save();
 
