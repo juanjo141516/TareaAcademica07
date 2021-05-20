@@ -30,10 +30,10 @@ CREATE TABLE `productos` (
   `fechaIngreso` datetime DEFAULT NULL,
   `estado` tinyint DEFAULT NULL,
   `afectoIGV` tinyint DEFAULT NULL,
-  `precio` decimal(2,0) DEFAULT NULL,
-  `ruc` int DEFAULT NULL,
+  `precio` decimal(6,2) DEFAULT NULL,
+  `ruc` bigint DEFAULT NULL,
   `proveedor` varchar(50) DEFAULT NULL,
-  `categorias` varchar(50) DEFAULT NULL,
+  `categoria` varchar(50) DEFAULT NULL,
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -46,7 +46,7 @@ CREATE TABLE `productos` (
 
 LOCK TABLES `productos` WRITE;
 /*!40000 ALTER TABLE `productos` DISABLE KEYS */;
-INSERT INTO `productos` VALUES (3,246810,'Pollo a la brasa',NULL,'2020-10-25 00:00:00',2,1,25,12345678,'Pardos','Comidas rapidas','2021-05-19 04:18:28','2021-05-19 04:18:28'),(4,13579,'Tallarines rojos',NULL,'2020-10-27 00:00:00',1,0,35,9874563,'Molitalia','Pastas','2021-05-19 04:25:15','2021-05-19 04:25:15'),(5,101213,'Arroz Chaufa',NULL,'2020-10-20 00:00:00',0,1,15,10111121,'China work','Cereales','2021-05-19 04:55:04','2021-05-19 04:55:04'),(6,152365,'Caldo de Gallina',NULL,'2020-11-25 00:00:00',1,1,35,9523654,'Calera','Sopas','2021-05-19 05:11:05','2021-05-19 05:11:05'),(8,152365,'Rocoto Relleno',NULL,'2020-10-14 00:00:00',2,0,27,759865321,'Rocoto SAC','Especialidades','2021-05-20 19:50:50','2021-05-20 19:50:50'),(9,154789,'Ceviche',NULL,'2020-09-14 00:00:00',0,1,39,159874222,'Cevicheria SAC','Maricos/Pescados','2021-05-20 20:06:30','2021-05-20 20:06:30');
+INSERT INTO `productos` VALUES (3,154788,'Ceviche',NULL,'2020-09-14 00:00:00',0,1,29.00,15987422252,'Cevicheria SAC','Maricos/Pescados','2021-05-19 04:18:28','2021-05-20 23:38:16'),(4,141516,'Tallarines rojos',NULL,'2020-10-27 00:00:00',1,0,35.00,98745633322,'Rústica SA','Pastas','2021-05-19 04:25:15','2021-05-20 23:43:13'),(5,111213,'Chaufa',NULL,'2021-02-20 00:00:00',0,1,30.50,12365478999,'China Work','Chifa','2021-05-19 04:55:04','2021-05-20 23:30:14'),(6,252627,'Caldo de Gallina',NULL,'2020-11-25 00:00:00',1,1,24.85,45612378955,'Freddys','Sopas','2021-05-19 05:11:05','2021-05-20 23:32:30'),(8,152365,'Rocoto Relleno',NULL,'2020-10-14 00:00:00',2,0,24.56,11759865321,'Rocoto SAC','Especialidades','2021-05-20 19:50:50','2021-05-20 23:41:53'),(9,987369,'Arroz con Marisco',NULL,'2020-09-14 00:00:00',0,1,59.66,15987422252,'Cevicheria SAC','Maricos/Pescados','2021-05-20 20:06:30','2021-05-20 23:36:57');
 /*!40000 ALTER TABLE `productos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -59,4 +59,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-20 15:16:20
+-- Dump completed on 2021-05-20 18:48:54
