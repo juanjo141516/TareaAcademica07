@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "ea5d00ca-7059-417c-a8a4-f5f6f2ef66c6",
+		"name": "Productos",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/Producto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 154789,\r\n    \"nombre\": \"Ceviche\",\r\n    \"descripcion\": null,\r\n    \"fechaIngreso\": \"2020-09-14T00:00:00\",\r\n    \"estado\": 0,\r\n    \"afectoIGV\": true,\r\n    \"precio\": 39.00 ,\r\n    \"ruc\": 159874222 ,\r\n    \"proveedor\": \"Cevicheria SAC\" ,\r\n    \"categoria\": \"Maricos/Pescados\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/Producto",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"Producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/Producto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 154789,\r\n    \"nombre\": \"Ceviche\",\r\n    \"descripcion\": null,\r\n    \"fechaIngreso\": \"2020-09-14T00:00:00\",\r\n    \"estado\": 0,\r\n    \"afectoIGV\": 1,\r\n    \"precio\": 39.00 ,\r\n    \"ruc\": 159874222 ,\r\n    \"proveedor\": \"Cevicheria SAC\" ,\r\n    \"categoria\": \"Maricos/Pescados\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/Producto/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"Producto",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/Producto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/Producto/8",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"Producto",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/Producto",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/Producto/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"Producto",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
